@@ -4,6 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors()
   const options = new DocumentBuilder()
     .setTitle('后台管理api')
     .setDescription('供后台管理调用的服务端api')
