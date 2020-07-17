@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/hama233",
+  "sourceRoot": "apps/hama233/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/hama233/tsconfig.app.json"
+  },
+  "projects": {
+    "hama233": {
+      "type": "application",
+      "root": "apps/hama233",
+      "entryFile": "main",
+      "sourceRoot": "apps/hama233/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/hama233/tsconfig.app.json"
+      }
+    },
+    "admin": {
+      "type": "application",
+      "root": "apps/admin",
+      "entryFile": "main",
+      "sourceRoot": "apps/admin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/admin/tsconfig.app.json"
+      }
+    }
+  }
+}
