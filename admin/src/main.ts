@@ -10,7 +10,7 @@ import EleForm from 'vue-ele-form'
 Vue.use(EleForm)
 Vue.config.productionTip = false
 const http = axios.create({
-  baseURL: 'http://localhost:3000'
+  baseURL: process.env.VUE_APP_API_URL
 })
 Vue.prototype.$httpajax = http
 Vue.prototype.$http = http
